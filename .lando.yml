@@ -1,0 +1,9 @@
+name: mt-starter-kit
+recipe: laravel
+config:
+  php: '8.4'
+  webroot: public
+services:
+  appserver:
+    build_as_root:
+      - apt-get update -y && pecl install pcov && docker-php-ext-enable pcov

@@ -1,0 +1,29 @@
+stages:
+  - prepare
+  - install
+  - build
+  - test
+  - push
+  - deploy
+
+include:
+  - remote: https://devops.mtra.in/tpl/v6/flows/laravel.yml
+  - remote: https://devops.mtra.in/tpl/v6/deploy/git.yml
+
+variables:
+  PHP_VERSION: '8.4'
+  GIT_REMOTE_REF_NAME: master
+  ARTISAN_SETUP_SCRIPT: 'php artisan key:generate'
+  NPM_BUILD_SCRIPT: 'build'
+  BUILD_PATH: public
+  SYNC_PATHS: 'vendor bootstrap/cache'
+
+build:laravel-mix-npm:
+  extends: .build-laravel-mix-npm
+  needs: [ install:npm, "install:composer" ]
+  rules:
+    - when: on_success
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - public/build
