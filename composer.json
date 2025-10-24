@@ -78,9 +78,9 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "@lando start",
-            "@lando artisan key:generate --ansi",
-            "@lando artisan migrate --graceful --ansi"
+            "lando start",
+            "lando artisan key:generate --ansi",
+            "lando artisan migrate --graceful --ansi"
         ],
         "pre-package-uninstall": [
             "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
