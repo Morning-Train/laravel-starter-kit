@@ -79,7 +79,7 @@ return [
     |
     */
 
-    'filters' => empty(env('BUGSNAG_FILTERS')) ? null : explode(',', str_replace(' ', '', env('BUGSNAG_FILTERS'))),
+    'filters' => null,
 
     /*
     |--------------------------------------------------------------------------
@@ -106,7 +106,7 @@ return [
     'proxy' => array_filter([
         'http' => env('HTTP_PROXY'),
         'https' => env('HTTPS_PROXY'),
-        'no' => empty(env('NO_PROXY')) ? null : explode(',', str_replace(' ', '', env('NO_PROXY'))),
+        'no' => null,
     ]),
 
     /*
@@ -225,7 +225,7 @@ return [
     |
     */
 
-    'notify_release_stages' => empty(env('BUGSNAG_NOTIFY_RELEASE_STAGES')) ? null : explode(',', str_replace(' ', '', env('BUGSNAG_NOTIFY_RELEASE_STAGES'))),
+    'notify_release_stages' => ['production', 'staging'],
 
     /*
     |--------------------------------------------------------------------------
@@ -330,7 +330,7 @@ return [
     |
     */
 
-    'discard_classes' => empty(env('BUGSNAG_DISCARD_CLASSES')) ? null : explode(',', env('BUGSNAG_DISCARD_CLASSES')),
+    'discard_classes' => null,
 
     /*
     |--------------------------------------------------------------------------
@@ -341,7 +341,7 @@ return [
     |
     */
 
-    'redacted_keys' => empty(env('BUGSNAG_REDACTED_KEYS')) ? null : explode(',', env('BUGSNAG_REDACTED_KEYS')),
+    'redacted_keys' => null,
 
     /*
     |--------------------------------------------------------------------------
