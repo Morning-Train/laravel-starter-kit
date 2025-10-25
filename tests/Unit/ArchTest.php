@@ -7,3 +7,9 @@ arch()->preset()->security(); // See rules here https://github.com/pestphp/pest/
 arch()
     ->expect('App')
     ->not->toUse(['die', 'dd', 'dump', 'ray', 'rd']);
+
+test('controllers')
+    ->expect('App\Http\Controllers')
+    ->toHaveSuffix('Controller')
+    ->toBeClasses()
+    ->classes->toExtendNothing();

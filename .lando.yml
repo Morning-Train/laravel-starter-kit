@@ -7,3 +7,11 @@ services:
   appserver:
     build_as_root:
       - apt-get update -y && pecl install pcov && docker-php-ext-enable pcov
+    build:
+      - composer install
+  database:
+    portforward: 3307
+
+tooling:
+  npm:
+    service: node
