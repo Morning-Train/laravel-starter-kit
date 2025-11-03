@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3662f42986fbd1aade5a506d6e92afc2",
+    "content-hash": "cfdedf2db509b74a01fc68e8a260039b",
     "packages": [
         {
             "name": "brick/math",
@@ -8334,69 +8334,6 @@
             "time": "2025-10-20T09:56:46+00:00"
         },
         {
-            "name": "laravel/sail",
-            "version": "v1.46.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/sail.git",
-                "reference": "eb90c4f113c4a9637b8fdd16e24cfc64f2b0ae6e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/eb90c4f113c4a9637b8fdd16e24cfc64f2b0ae6e",
-                "reference": "eb90c4f113c4a9637b8fdd16e24cfc64f2b0ae6e",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/console": "^9.52.16|^10.0|^11.0|^12.0",
-                "illuminate/contracts": "^9.52.16|^10.0|^11.0|^12.0",
-                "illuminate/support": "^9.52.16|^10.0|^11.0|^12.0",
-                "php": "^8.0",
-                "symfony/console": "^6.0|^7.0",
-                "symfony/yaml": "^6.0|^7.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
-                "phpstan/phpstan": "^1.10"
-            },
-            "bin": [
-                "bin/sail"
-            ],
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Laravel\\Sail\\SailServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laravel\\Sail\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "Docker files for running a basic Laravel application.",
-            "keywords": [
-                "docker",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/laravel/sail/issues",
-                "source": "https://github.com/laravel/sail"
-            },
-            "time": "2025-09-23T13:44:39+00:00"
-        },
-        {
             "name": "mockery/mockery",
             "version": "1.6.12",
             "source": {
@@ -9103,27 +9040,27 @@
         },
         {
             "name": "pestphp/pest-plugin-type-coverage",
-            "version": "v4.0.2",
+            "version": "v4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest-plugin-type-coverage.git",
-                "reference": "d7701b0b6d4412ad77eeda62ed266bdb9212d62d"
+                "reference": "123bbf73d4b790373600132f503fd8d1453d40bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest-plugin-type-coverage/zipball/d7701b0b6d4412ad77eeda62ed266bdb9212d62d",
-                "reference": "d7701b0b6d4412ad77eeda62ed266bdb9212d62d",
+                "url": "https://api.github.com/repos/pestphp/pest-plugin-type-coverage/zipball/123bbf73d4b790373600132f503fd8d1453d40bb",
+                "reference": "123bbf73d4b790373600132f503fd8d1453d40bb",
                 "shasum": ""
             },
             "require": {
                 "nunomaduro/pokio": "^0.1.1",
                 "pestphp/pest-plugin": "^4.0.0",
                 "php": "^8.3",
-                "phpstan/phpstan": "^1.12.24|^2.1.22",
+                "phpstan/phpstan": "^1.12.24|^2.1.31",
                 "tomasvotruba/type-coverage": "^1.0.0|^2.0.2"
             },
             "require-dev": {
-                "pestphp/pest": "^4.0.0",
+                "pestphp/pest": "^4.1.3",
                 "pestphp/pest-dev-tools": "^4.0.0"
             },
             "type": "library",
@@ -9156,7 +9093,7 @@
                 "unit"
             ],
             "support": {
-                "source": "https://github.com/pestphp/pest-plugin-type-coverage/tree/v4.0.2"
+                "source": "https://github.com/pestphp/pest-plugin-type-coverage/tree/v4.0.3"
             },
             "funding": [
                 {
@@ -9168,7 +9105,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-21T09:44:31+00:00"
+            "time": "2025-11-02T23:10:59+00:00"
         },
         {
             "name": "phar-io/manifest",
