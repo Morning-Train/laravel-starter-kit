@@ -3828,16 +3828,16 @@
         },
         {
             "name": "spatie/laravel-stubs",
-            "version": "3.1.1",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-stubs.git",
-                "reference": "dc56f829229ae7e5fefbc6415faef682486a6083"
+                "reference": "9486ce097857fd31f8e09c7bf6f7b5935404c099"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-stubs/zipball/dc56f829229ae7e5fefbc6415faef682486a6083",
-                "reference": "dc56f829229ae7e5fefbc6415faef682486a6083",
+                "url": "https://api.github.com/repos/spatie/laravel-stubs/zipball/9486ce097857fd31f8e09c7bf6f7b5935404c099",
+                "reference": "9486ce097857fd31f8e09c7bf6f7b5935404c099",
                 "shasum": ""
             },
             "require": {
@@ -3881,7 +3881,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/laravel-stubs/tree/3.1.1"
+                "source": "https://github.com/spatie/laravel-stubs/tree/3.1.2"
             },
             "funding": [
                 {
@@ -3889,7 +3889,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-02-20T11:04:25+00:00"
+            "time": "2026-01-12T07:35:01+00:00"
         },
         {
             "name": "spatie/macroable",
