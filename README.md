@@ -1,11 +1,11 @@
 ## MT Laravel Starter Kit
 
-A modern, production-ready Laravel 12 starter kit with a complete development environment and integrated tooling for building robust applications.
+A modern, production-ready Laravel 13 starter kit with a complete development environment and integrated tooling for building robust applications.
 
 ## Features
 
 ### Core Stack
-- **Laravel 12** - Latest Laravel framework with streamlined structure
+- **Laravel 13** - Latest Laravel framework with streamlined structure
 - **PHP 8.4** - Latest PHP version with modern language features
 - **Tailwind CSS v4** - Latest utility-first CSS framework
 - **Vite** - Lightning-fast frontend build tool
