@@ -3748,16 +3748,16 @@
         },
         {
             "name": "spatie/laravel-ray",
-            "version": "1.43.7",
+            "version": "1.43.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-ray.git",
-                "reference": "d550d0b5bf87bb1b1668089f3c843e786ee522d3"
+                "reference": "0de5b861cce7c17276bb649b4b34964b822e32b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-ray/zipball/d550d0b5bf87bb1b1668089f3c843e786ee522d3",
-                "reference": "d550d0b5bf87bb1b1668089f3c843e786ee522d3",
+                "url": "https://api.github.com/repos/spatie/laravel-ray/zipball/0de5b861cce7c17276bb649b4b34964b822e32b9",
+                "reference": "0de5b861cce7c17276bb649b4b34964b822e32b9",
                 "shasum": ""
             },
             "require": {
@@ -3776,7 +3776,7 @@
             "require-dev": {
                 "guzzlehttp/guzzle": "^7.3",
                 "laravel/framework": "^7.20|^8.19|^9.0|^10.0|^11.0|^12.0|^13.0",
-                "laravel/pint": "^1.27",
+                "laravel/pint": "^1.29",
                 "orchestra/testbench-core": "^5.0|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
                 "pestphp/pest": "^1.22|^2.0|^3.0|^4.0",
                 "phpstan/phpstan": "^1.10.57|^2.0.2",
@@ -3821,7 +3821,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-ray/issues",
-                "source": "https://github.com/spatie/laravel-ray/tree/1.43.7"
+                "source": "https://github.com/spatie/laravel-ray/tree/1.43.8"
             },
             "funding": [
                 {
@@ -3833,7 +3833,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-03-06T08:19:04+00:00"
+            "time": "2026-04-16T11:52:31+00:00"
         },
         {
             "name": "spatie/laravel-stubs",
@@ -5084,7 +5084,7 @@
         },
         {
             "name": "symfony/polyfill-iconv",
-            "version": "v1.34.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-iconv.git",
@@ -5144,7 +5144,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-iconv/tree/v1.34.0"
+                "source": "https://github.com/symfony/polyfill-iconv/tree/v1.36.0"
             },
             "funding": [
                 {
