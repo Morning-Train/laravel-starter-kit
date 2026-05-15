@@ -1,7 +1,7 @@
 name: mt-starter-kit
 recipe: laravel
 config:
-  php: '8.4'
+  php: "8.4"
   webroot: public
 services:
   appserver:
@@ -11,7 +11,17 @@ services:
       - composer install
   database:
     portforward: 3307
+  node:
+    type: node:24
+    build_as_root:
+      - npm install -g npm@latest
+    build:
+      - npm ci
 
 tooling:
   npm:
+    service: node
+  npx:
+    service: node
+  node:
     service: node
