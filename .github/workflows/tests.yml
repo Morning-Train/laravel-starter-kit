@@ -2,19 +2,19 @@ name: tests
 
 on:
   push:
-    branches:
-      - master
+    branches: [master]
   pull_request:
-    branches:
-      - master
+    branches: [master]
+
+permissions:
+  contents: read
 
 jobs:
   ci:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -24,11 +24,12 @@ jobs:
           coverage: xdebug
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: '22'
+          node-version: '24'
+          cache: 'npm'
 
-      - name: Install Dependencies
+      - name: Install Composer Dependencies
         run: composer install --no-interaction --prefer-dist --optimize-autoloader
 
       - name: Copy Environment File
@@ -38,17 +39,18 @@ jobs:
         run: php artisan key:generate
 
       - name: Install Node Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Assets
         run: npm run build
 
       - name: PHPStan Cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: /tmp/phpstan
           key: ${{ runner.os }}-phpstan-${{ hashFiles('composer.lock') }}
           restore-keys: ${{ runner.os }}-phpstan-
+
       - run: mkdir -p /tmp/phpstan
 
       - name: Tests
