@@ -60,11 +60,13 @@
         ],
         "test:unit": "vendor/bin/pest --parallel --coverage",
         "test:types": "phpstan",
+        "test:audit": "composer audit --no-dev --abandoned=fail",
         "test": [
             "@test:type-coverage",
             "@test:unit",
             "@test:lint",
-            "@test:types"
+            "@test:types",
+            "@test:audit"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
@@ -100,6 +102,11 @@
         }
     },
     "config": {
+        "secure-http": true,
+        "audit": {
+            "abandoned": "fail",
+            "ignore": []
+        },
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
